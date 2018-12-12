@@ -6895,11 +6895,33 @@ button.close {
 <br />
 <script>
 function validate(coupon) {
-    var myRe = "LUCKY100";
+    var myRe = "HETENSAU";
     var coupon = myRe.trim();
     var input = document.getElementById('in').value;
     if(input.toUpperCase() == coupon.toUpperCase()) {
-        document.getElementById('message').innerHTML="Code accepted!";
+        document.getElementById('message').innerHTML="<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<iframe frameborder="no" height="450" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229101870&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%"></iframe>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<iframe frameborder="no" height="450" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/242136202&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%"></iframe>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<iframe frameborder="no" height="450" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226311399&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>";
         document.getElementById('err').innerHTML="";
         return true;
     } else {
